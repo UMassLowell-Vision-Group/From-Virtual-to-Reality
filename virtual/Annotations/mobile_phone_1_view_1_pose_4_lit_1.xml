@@ -1,0 +1,25 @@
+<annotation>
+<folder>mobile_phone</folder>
+<filename>mobile_phone_1_view_1_pose_4_lit_1.jpg</filename>
+<source>
+<database>photorealistic	rendering</database>
+</source>
+<size>
+<width>640</width>
+<height>480</height>
+<depth>3</depth>
+</size>
+<segmented>0</segmented>
+<object>
+<name>mobile_phone</name>
+<pose>Unspecified</pose>
+<truncated>0</truncated>
+<difficult>0</difficult>
+<bndbox>
+<xmin>137</xmin>
+<ymin>143</ymin>
+<xmax>512</xmax>
+<ymax>376</ymax>
+</bndbox>
+</object>
+</annotation>

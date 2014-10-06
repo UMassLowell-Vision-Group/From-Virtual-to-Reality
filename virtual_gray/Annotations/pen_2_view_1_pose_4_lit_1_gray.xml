@@ -1,0 +1,25 @@
+<annotation>
+<folder>pen</folder>
+<filename>pen_2_view_1_pose_4_lit_1_gray.jpg</filename>
+<source>
+<database>photorealistic	rendering</database>
+</source>
+<size>
+<width>640</width>
+<height>480</height>
+<depth>3</depth>
+</size>
+<segmented>0</segmented>
+<object>
+<name>pen</name>
+<pose>Unspecified</pose>
+<truncated>0</truncated>
+<difficult>0</difficult>
+<bndbox>
+<xmin>129</xmin>
+<ymin>145</ymin>
+<xmax>584</xmax>
+<ymax>360</ymax>
+</bndbox>
+</object>
+</annotation>

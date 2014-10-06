@@ -1,0 +1,25 @@
+<annotation>
+<folder>file_cabinet</folder>
+<filename>file_cabinet_2_view_1_pose_9_lit_1_gray.jpg</filename>
+<source>
+<database>photorealistic	rendering</database>
+</source>
+<size>
+<width>640</width>
+<height>480</height>
+<depth>3</depth>
+</size>
+<segmented>0</segmented>
+<object>
+<name>file_cabinet</name>
+<pose>Unspecified</pose>
+<truncated>0</truncated>
+<difficult>0</difficult>
+<bndbox>
+<xmin>257</xmin>
+<ymin>129</ymin>
+<xmax>392</xmax>
+<ymax>352</ymax>
+</bndbox>
+</object>
+</annotation>
