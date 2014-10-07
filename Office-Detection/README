@@ -1,6 +1,4 @@
 Office Dataset
 
-description: http://www.cs.uml.edu/~saenko/projects.html#data
-images: http://www.cs.uml.edu/~saenko/data/domain_adaptation_images.tar.gz
-annotations: http://www.icsi.berkeley.edu/~erik/office-bb.tar
+Download it here: http://www.cs.uml.edu/~bsun/Office_Detection.tar
 
