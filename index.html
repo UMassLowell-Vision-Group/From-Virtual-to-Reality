@@ -1,43 +1,34 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en-us">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content=" From Virtual to Reality : Fast Adaptation of Virtual Object Detectors to Real Domains">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title> From Virtual to Reality</title>
+    <meta charset="UTF-8">
+    <title> From Virtual to Reality by UMassLowell-Vision-Group</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
-
   <body>
+    <section class="page-header">
+      <h1 class="project-name"> From Virtual to Reality</h1>
+      <h2 class="project-tagline">Fast Adaptation of Virtual Object Detectors to Real Domains</h2>
+      <a href="https://github.com/UMassLowell-Vision-Group/From-Virtual-to-Reality" class="btn">View on GitHub</a>
+      <a href="https://github.com/UMassLowell-Vision-Group/From-Virtual-to-Reality/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/UMassLowell-Vision-Group/From-Virtual-to-Reality/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/UMassLowell-Vision-Group/From-Virtual-to-Reality">View on GitHub</a>
+    <section class="main-content">
+      <h1>
+<a id="from-virtual-to-reality-fast-adaptation-of-virtual-object-detectors-to-real-domain" class="anchor" href="#from-virtual-to-reality-fast-adaptation-of-virtual-object-detectors-to-real-domain" aria-hidden="true"><span class="octicon octicon-link"></span></a>From Virtual to Reality: Fast Adaptation of Virtual Object Detectors to Real Domain</h1>
 
-          <h1 id="project_title"> From Virtual to Reality</h1>
-          <h2 id="project_tagline">Fast Adaptation of Virtual Object Detectors to Real Domains</h2>
+<p>Dataset and code for "From Virtual to Reality: Fast Adaptation of Virtual Object Detectors to Real Domains" by Baochen Sun and Kate Saenko. Published in British Machine Vision Conference(BMVC) 2014.</p>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/UMassLowell-Vision-Group/From-Virtual-to-Reality/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/UMassLowell-Vision-Group/From-Virtual-to-Reality/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+<p>Paper: <a href="https://github.com/UMassLowell-Vision-Group/bmvc2014/raw/master/bmvc14_paper.pdf">https://github.com/UMassLowell-Vision-Group/bmvc2014/raw/master/bmvc14_paper.pdf</a></p>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <p>Dataset and code for "From Virtual to Reality: Fast Adaptation of Virtual Object Detectors to Real Domains" by Baochen Sun and Kate Saenko. Published in British Machine Vision Conference(BMVC) 2014.</p>
+<p>Extended Abstract: <a href="https://github.com/UMassLowell-Vision-Group/bmvc2014/raw/master/bmvc14_extended_abstract.pdf">https://github.com/UMassLowell-Vision-Group/bmvc2014/raw/master/bmvc14_extended_abstract.pdf</a></p>
 
-<p><a href="https://github.com/UMassLowell-Vision-Group/bmvc2014/raw/master/bmvc14_paper.pdf">Click Here to Download the Paper</a></p>
-
-<p><a href="https://github.com/UMassLowell-Vision-Group/bmvc2014/raw/master/bmvc14_extended_abstract.pdf">Click Here to Download the Extended Abstract</a></p>
-
-<p><a href="https://github.com/UMassLowell-Vision-Group/bmvc2014/raw/master/bmvc14_poster.pdf">Click Here to Download the Poster</a></p>
+<p>Poster: <a href="https://github.com/UMassLowell-Vision-Group/bmvc2014/raw/master/bmvc14_poster.pdf">https://github.com/UMassLowell-Vision-Group/bmvc2014/raw/master/bmvc14_poster.pdf</a></p>
 
 <h2>
 <a id="citation" class="anchor" href="#citation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Citation</h2>
@@ -51,18 +42,27 @@
     Year = {2014}
 }
 </code></pre>
-      </section>
-    </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright"> From Virtual to Reality maintained by <a href="https://github.com/UMassLowell-Vision-Group">UMassLowell-Vision-Group</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+<h2>
+<a id="faq" class="anchor" href="#faq" aria-hidden="true"><span class="octicon octicon-link"></span></a>FAQ</h2>
+
+<p>The source code is available in 'code' folder. The render.ms is the file for the rendering part. All the rendered images (with annotation) are in these two folders: 'virtual' and 'virtual_gray'. The 3D models is in the '3d_models' folder.Basically, here is the brief steps:
+1. Download the 3D models
+2. Run render.ms in 3ds Max (the software we used to generate the dataset)
+The are also limited comments in render.ms which might help you understand the code.</p>
+
+<p>To generate more realistic images (as in the 'What Do Deep CNNs Learn About Object' paper), you may need to specify different background and texture for different category/3d model. Then you need to change the 'images_bg' and 'images_texture' in the render.ms file to point to different background and textures for different category/3d model.</p>
+
+<p>For now, we did not implemented the full photorealistic rendering since it is more complicated (e.g. might need to use ray-tracking algorithms to do that) and take far more time (e.g. hours) to render one image. However, as showed in the 'From-Virtual-to-Reality' paper, simple domain adaptation techniques can get same performance as training classifiers with real images (e.g. images from ImageNet).</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/UMassLowell-Vision-Group/From-Virtual-to-Reality"> From Virtual to Reality</a> is maintained by <a href="https://github.com/UMassLowell-Vision-Group">UMassLowell-Vision-Group</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
-    </div>
 
-    
+    </section>
 
+  
   </body>
 </html>
