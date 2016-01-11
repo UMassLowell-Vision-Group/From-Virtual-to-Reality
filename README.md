@@ -3,6 +3,8 @@ From Virtual to Reality: Fast Adaptation of Virtual Object Detectors to Real Dom
 
 Dataset and code for "From Virtual to Reality: Fast Adaptation of Virtual Object Detectors to Real Domains" by Baochen Sun and Kate Saenko. Published in British Machine Vision Conference(BMVC) 2014.
 
+For dataset and code, please go to the github repo (https://github.com/UMassLowell-Vision-Group/From-Virtual-to-Reality).
+
 Paper: https://github.com/UMassLowell-Vision-Group/bmvc2014/raw/master/bmvc14_paper.pdf
 
 Extended Abstract: https://github.com/UMassLowell-Vision-Group/bmvc2014/raw/master/bmvc14_extended_abstract.pdf
